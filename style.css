@@ -1,0 +1,291 @@
+body {
+
+    font-family: 'Roboto', sans-serif;
+
+    line-height: 1.6;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+}
+
+header {
+
+    background: #333;
+
+    color: #fff;
+
+    padding: 1rem 0;
+
+    text-align: center;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+}
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 2.5em;
+
+}
+
+header p {
+
+    font-size: 1.1em;
+
+    margin-top: 5px;
+
+}
+
+main {
+
+    padding: 20px;
+
+    max-width: 1000px;
+
+    margin: 20px auto;
+
+    background: #fff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+section {
+
+    margin-bottom: 30px;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+section:last-child {
+
+    border-bottom: none;
+
+}
+
+h2 {
+
+    color: #0056b3;
+
+    border-bottom: 2px solid #007bff;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 1.8em;
+
+}
+
+h3 {
+
+    color: #0056b3;
+
+    margin-top: 25px;
+
+    font-size: 1.4em;
+
+}
+
+p {
+
+    margin-bottom: 15px;
+
+}
+
+ul, ol {
+
+    margin-bottom: 15px;
+
+    padding-left: 25px;
+
+}
+
+li {
+
+    margin-bottom: 8px;
+
+}
+
+a {
+
+    color: #007bff;
+
+    text-decoration: none;
+
+}
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+.certificacao-item, .perfil-item, .detalhes-certificacao {
+
+    background: #f9f9f9;
+
+    border: 1px solid #ddd;
+
+    border-left: 5px solid #007bff;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+
+}
+
+/* Tabela */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+th, td {
+
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    text-align: left;
+
+}
+
+th {
+
+    background-color: #007bff;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+tr:nth-child(even) {
+
+    background-color: #f2f2f2;
+
+}
+
+tr:hover {
+
+    background-color: #e2e2e2;
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #333;
+
+    color: #fff;
+
+    margin-top: 30px;
+
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+
+}
+
+/* Responsividade básica */
+
+@media (max-width: 768px) {
+
+    header h1 {
+
+        font-size: 2em;
+
+    }
+
+    main {
+
+        margin: 10px;
+
+        padding: 15px;
+
+    }
+
+    section {
+
+        padding: 15px 0;
+
+    }
+
+    table, thead, tbody, th, td, tr {
+
+        display: block;
+
+    }
+
+    thead tr {
+
+        position: absolute;
+
+        top: -9999px;
+
+        left: -9999px;
+
+    }
+
+    tr { border: 1px solid #ccc; margin-bottom: 10px; }
+
+    td {
+
+        border: none;
+
+        border-bottom: 1px solid #eee;
+
+        position: relative;
+
+        padding-left: 50%;
+
+        text-align: right;
+
+    }
+
+    td:before {
+
+        position: absolute;
+
+        top: 6px;
+
+        left: 6px;
+
+        width: 45%;
+
+        padding-right: 10px;
+
+        white-space: nowrap;
+
+        text-align: left;
+
+        font-weight: bold;
+
+        content: attr(data-label); /* Adicione data-label no HTML se quiser um rótulo aqui */
+
+    }
+
+}
